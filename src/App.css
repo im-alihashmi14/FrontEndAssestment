@@ -28,6 +28,218 @@
   color: #61dafb;
 }
 
+.snapchat {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Helvetica;
+  font-style: normal;
+  font-size: 64px;
+  /* identical to box height */
+
+  text-align: right;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd;
+}
+.leftDiv {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.rightDiv {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 160px;
+}
+.subTextColor {
+  color: #240d57;
+  font-family: Helvetica;
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 700;
+  /* or 100% */
+
+  text-align: right;
+}
+.textContent {
+  color: #4f4f4f;
+  width: 520px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+}
+.btn {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  width: 320px;
+  height: 55px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 16px;
+}
+.meidaQueryDiv {
+  display: none;
+}
+.birthLeftDiv {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    /* display: block; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .reverseColumn {
+    flex-direction: column-reverse;
+  }
+  .leftDiv {
+    display: none;
+  }
+  .textContent {
+    text-align: center;
+  }
+  .meidaQueryDiv {
+    display: flex;
+    flex: 1;
+    /* height: 548px; */
+    /* width: 50%; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 52px;
+  }
+  .rightDiv {
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    padding: 16px;
+  }
+  .birthLeftDiv {
+    align-items: flex-start;
+  }
+}
+.dateContent {
+  flex-direction: row;
+}
+.date {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #240d57;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.birthDayText {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+
+  color: #240d57;
+}
+.birthTextContent {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding: 0px; */
+  padding-left: 20px;
+  gap: 3px;
+}
+.svgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 1px;
+
+  width: 56px;
+  height: 56px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.subDateContent {
+  display: flex;
+  flex-direction: row;
+}
+.dateContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.dateTextContent {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #4f4f4f;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
